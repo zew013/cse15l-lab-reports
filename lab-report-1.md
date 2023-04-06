@@ -8,7 +8,7 @@ I installed and used VS Code for other classes. So it’s already installed. Gen
 ### Part 4 - Remotely Connecting
 I am more familiar with the Terminal on Mac. So I used the Terminal on Mac. \
 After typing 
-> ssh cs15lsp23bp@ieng6.ucsd.edu \
+> ssh cs15lsp23bp@ieng6.ucsd.edu
 
 and entered my password as shown below:
 ![login remote server](password.png)
