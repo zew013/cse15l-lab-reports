@@ -6,9 +6,10 @@
 I installed and used VS Code for other classes. So it’s already installed. Generally, you just search vscode on Google, go to their [website](https://code.visualstudio.com/) and select the one that match your operating system.
 
 ### Part 4 - Remotely Connecting
-I am more familiar with the Terminal on Mac. So I used the Terminal on Mac.
+I am more familiar with the Terminal on Mac. So I used the Terminal on Mac. \
 After typing 
-> ssh cs15lsp23bp@ieng6.ucsd.edu
+> ssh cs15lsp23bp@ieng6.ucsd.edu \
+
 and entered my password as shown below:
 ![login remote server](password.png)
 
