@@ -1,0 +1,7 @@
+javac Server.java NumberServer.java
+java NumberServer 4000
+
+
+http://localhost:4000/
+http://localhost:4000/increment
+http://localhost:4000/add?count=30
