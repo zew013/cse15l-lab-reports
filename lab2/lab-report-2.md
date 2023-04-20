@@ -61,17 +61,66 @@ Handler was called again. The argument is the url with the same struture when we
 
 
 
-### Part 4 - Remotely Connecting
-I am more familiar with the Terminal on Mac. So I used the Terminal on Mac. \
-After typing 
-> ssh cs15lsp23bp@ieng6.ucsd.edu
+### Part 2
+The bug I am choosing is the ```reverseInPlace``` method from ```ArrayExamples.java```.
 
-and entered my password as shown below:
-![login remote server](password.png)
+The original method is like this:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+import library for Junit:
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+```
+1. Failure-inducing input: 
+```
+public class ArrayTests {
+    @Test 
+	public void testReverseInPlace2() {
+        int[] input1 = { 3, 4, 5, 6, 7 };
+        ArrayExamples.reverseInPlace(input1);
+        System.out.print(input1);
+        assertArrayEquals(new int[]{ 7,6,5,4,3 }, input1);
+	}
+}
+```
+2. An input that doesn’t induce a failure
+```
+public class ArrayTests {
+	@Test 
+	public void testReverseInPlace() {
+        int[] input1 = { 3 };
+        ArrayExamples.reverseInPlace(input1);
+        assertArrayEquals(new int[]{ 3 }, input1);
+	}
+}
+```
 
-### Part 5 – Run Some Commands
-Then I tried various commands in the remote server and did similar things on my own laptop with different file names:
-![navigation](navigation.png)
+3. The symptom of 1 and 2. We can see we want the array to be reversed from ```{ 3, 4, 5, 6, 7 }``` to ```{ 7,6,5,4,3 }``` but failed at position 3. The symptom is 6 instead of what we expected 4. However, we passed the case of ```{ 3 }``` and didn't fail the Junit.
 
-### Part 6 – git, Github, and Github Pages and Part 7 – Creating a Website with Github Pages
-[Link to github page](https://zew013.github.io/cse15l-lab-reports/)
+<img src="failure-inducing.png" width="400" height="300">
+
+4. The bug exist in ```arr[i] = arr[arr.length - i - 1];``` as we are modifying the first half part in ```arr[i] = ```. By the time we reached the first half part in ```arr[arr.length - i - 1];```, we have lost track of the original array.
+
+Fixed code: 
+```
+static void reverseInPlace_fix(int[] arr) {
+    int n = arr.length;
+    for (int i = 0; i < n / 2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[n - 1 - i];
+        arr[n - 1 - i] = temp;
+    }
+}
+```
+It fixed the issue because we never reach the second half part. The swap was achieved by only tracking the half of the index.
+
+
+### Part 3
+I didn't know how to perform many command line operation like copy and get path. By practicing these operations many times, I am more comfortable doing this. I also didn't know the similarities shared between markdown and html. I thought we can only use ```![image](image.png)``` in markdown. But when I tried to resize the image, I realized the image, I realized we could also use ```<img src="image.png" width="400" height="300">```.
+And I learned java almost 2 years ago and was forgetting most of it. It's nice to review.
