@@ -42,16 +42,19 @@ class StringServer {
 ```
 
 ![main page](stringserver1.png)
+
 This is the main page of StringServer.
 
 StringServer was called and started a new port. At the same time, a new Handler was created with string initialized as an empty ```string```. The argument now is just the url. And since there's no other argument after this, the first condition in ```handleRequest``` was triggered thus return the current string which is empty.
 
 ![first add-message page](stringserver2.png)
+
 This is the page when calling ```/add-message``` the first time.
 
  Handler was called again. The argument now is still the url but it includes a query with the message to be added. The second condition is triggered and the ```add-message``` path is recognized. Then query part of the url is extracted. ```parameters``` is created to record the query. ```parameters[0]``` is the content before "=" and ```parameters[1]``` is the content after "=". If ```parameters[0]``` equals "s", then ```parameters[1]``` is added to the ```string```
 
 ![second add-message page](stringserver3.png)
+
 This is the page when calling ```/add-message``` the second time.
 
 Handler was called again. The argument is the url with the same struture when we first added message. Simialr to the steps in the first time, query is extracted and new message is stored in ```parameters``` and get added to ```string```, except this time ```string``` already contains the message from last time.
