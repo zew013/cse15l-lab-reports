@@ -26,22 +26,22 @@ Notice you will not be able to see the password when typing, just hit enter or r
 ### Part 5 – Run Some Commands
 Then I tried various commands in the remote server and did similar things on my own laptop with different file names:
 
-1. I tried ```ls``` to see what files are available. 
+1. I tried ```ls``` to see what files are available. <br/>
 <img src="ls.png" width="400" height="40">
 
-2. I also check any hidden files, their permission and other info using ```ls -lat```
+2. I also check any hidden files, their permission and other info using ```ls -lat```<br/>
 <img src="ls-lat.png" width="400" height="240">
 
-3. I double check whether I am in the home directory using ```cd ~```
+3. I double check whether I am in the home directory using ```cd ~```<br/>
 <img src="cd.png" width="400" height="40">
 
-4. Then I list the hidden files again using ```ls -a```
+4. Then I list the hidden files again using ```ls -a```<br/>
 <img src="ls-a.png" width="400" height="50">
 
-5. Check the absolute path beyond home directory using ```pwd```
+5. Check the absolute path beyond home directory using ```pwd```<br/>
 <img src="pwd.png" width="400" height="40">
 
-6. Then I copied the file ```perl5``` using ```cp -r```. ```-r``` here is recursively copy.
+6. Then I copied the file ```perl5``` using ```cp -r```. ```-r``` here is recursively copy.<br/>
 <img src="cp.png" width="400" height="50">
 
 
