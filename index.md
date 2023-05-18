@@ -7,4 +7,6 @@ Hello, world!
 
 [link to lab report 3](https://zew013.github.io/cse15l-lab-reports/lab-rep3/lab-report-3)
 
+[link to lab report 4](https://zew013.github.io/cse15l-lab-reports/lab-rep4/lab-report-4)
+
 
