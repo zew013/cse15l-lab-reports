@@ -52,5 +52,10 @@ Now I got correct output:
 add `-z` before `"$file_found"` at `grade.sh` line 22.
 
 
-        
+## Reflection
+In the latter part of this quarter, one of the most useful skills I've acquired was learning how to use Vim, a highly configurable text editor built to enable efficient text editing especially when editing files on remote servers when interface is not available .
+
+Initially, I found Vim's modal nature and command structure quite challenging, but as I spent more time using it, I began to appreciate its power and efficiency. I've learned some basic commands like :wq to write and quit, dd to delete a line, h,j,k,l to navigate, and many more.
+
+
 
