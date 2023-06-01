@@ -15,9 +15,9 @@ Hi TAs, here is my bash code for `grade.sh`. I tested it with the link of correc
 
 Try to print out the value stored in `file_found` on line 19 using `echo`. 
 
-And also check this post https://unix.stackexchange.com/a/447244 about how bash works with different kinds of strings. 
+And also check this [post](https://unix.stackexchange.com/a/447244) about how bash works with different kinds of strings. 
 
-In your case of setting up the conditions, it might be helpful to take a look at the meaning and uage of `-z`: https://stackoverflow.com/a/18096739
+In your case of setting up the conditions, it might be helpful to take a look at the meaning and uage of `-z` [here](https://stackoverflow.com/a/18096739)
 
 ### Step 3: Student Update and What the Bug is.
 Thanks for your help!
@@ -43,7 +43,7 @@ Now I got correct output:
 <img src="structure.png" width="400" height="180">
 
 ### Step 4.2: The contents of each file before fixing the bug
-[https://github.com/zew013/cse15l-lab-reports/tree/main/lab-rep5/list-example-grader]
+[Files Link](https://github.com/zew013/cse15l-lab-reports/tree/main/lab-rep5/list-example-grader)
 
 ### Step 4.3: The full command line (or lines) you ran to trigger the bug
 `(base) zl@ous-MacBook-Pro list-example-grader % bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
