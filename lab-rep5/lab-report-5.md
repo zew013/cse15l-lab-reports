@@ -43,7 +43,7 @@ Now I got correct output:
 <img src="structure.png" width="400" height="180">
 
 ### Step 4.2: The contents of each file before fixing the bug
-https://github.com/zew013/cse15l-lab-reports/tree/main/lab-rep5/list-example-grader
+[https://github.com/zew013/cse15l-lab-reports/tree/main/lab-rep5/list-example-grader]
 
 ### Step 4.3: The full command line (or lines) you ran to trigger the bug
 `(base) zl@ous-MacBook-Pro list-example-grader % bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
